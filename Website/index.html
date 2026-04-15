@@ -1,0 +1,471 @@
+<html></html>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO-Leitfaden für Start-Ups | Basiswissen & Strategie</title>
+    <style>
+        /* ==========================================================================
+           Klassisches, solides CSS - Fokus auf Lesbarkeit, kein "modernes" Überdesign
+           ========================================================================== */
+        
+        :root {
+            --primary-color: #003366;
+            --secondary-color: #e67e22;
+            --bg-color: #f8f9fa;
+            --text-color: #333333;
+            --border-color: #cccccc;
+            --nav-hover: #004080;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #e2e1e0;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Layout-Container */
+        .wrapper {
+            max-width: 1100px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 20px 30px;
+            border-bottom: 5px solid var(--secondary-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            letter-spacing: 0.5px;
+        }
+
+        header p {
+            margin: 5px 0 0 0;
+            font-size: 1.1em;
+            color: #e0e0e0;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #f1f1f1;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav li {
+            float: left;
+            border-right: 1px solid var(--border-color);
+        }
+
+        nav li a {
+            display: block;
+            color: var(--primary-color);
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        nav li a:hover, nav li a.active {
+            background-color: var(--primary-color);
+            color: #ffffff;
+        }
+
+        /* Hauptbereich mit Sidebar */
+        .main-container {
+            display: flex;
+            min-height: 600px;
+        }
+
+        /* Content Area */
+        main {
+            flex: 3;
+            padding: 30px;
+            background-color: #ffffff;
+        }
+
+        /* Sidebar */
+        aside {
+            flex: 1;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-left: 1px solid var(--border-color);
+        }
+
+        aside h3 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+
+        aside ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        aside li {
+            margin-bottom: 10px;
+        }
+
+        /* Typografie & Inhalts-Styling */
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+
+        h3 {
+            color: #444444;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .highlight-box {
+            background-color: #ffffcc;
+            border: 1px solid #e6e600;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        /* Seiten-Simulation (JS steuert Sichtbarkeit) */
+        .page {
+            display: none;
+            animation: fadeIn 0.3s;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Visualisierung: Suchmaschine */
+        .diagram-container {
+            border: 2px solid var(--primary-color);
+            background-color: #f4f7f6;
+            padding: 20px;
+            margin: 25px 0;
+            text-align: center;
+        }
+
+        .diagram-step {
+            display: inline-block;
+            width: 25%;
+            background-color: white;
+            border: 1px solid var(--border-color);
+            padding: 15px;
+            vertical-align: top;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .diagram-step h4 {
+            margin-top: 0;
+            color: var(--primary-color);
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 5px;
+        }
+
+        .diagram-arrow {
+            display: inline-block;
+            font-size: 2em;
+            color: var(--secondary-color);
+            vertical-align: top;
+            margin: 20px 10px;
+        }
+
+        /* Bild-Platzhalter Styling */
+        .image-placeholder {
+            background-color: #eaeaea;
+            border: 1px solid #ccc;
+            padding: 40px;
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            margin: 20px 0;
+        }
+
+        /* Tabelle */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+
+        td {
+            padding: 10px;
+            background-color: #fafafa;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333333;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <header>
+        <h1>SEO-Guide für Start-Ups</h1>
+        <p>Der fundierte Begleiter für mehr digitale Sichtbarkeit</p>
+    </header>
+
+    <!-- Navigation (Simuliert die verschiedenen HTML-Dateien) -->
+    <nav>
+        <ul>
+            <li><a class="nav-link active" onclick="switchPage('home')">1. Grundlagen</a></li>
+            <li><a class="nav-link" onclick="switchPage('massnahmen')">2. SEM, Onpage & Offpage</a></li>
+            <li><a class="nav-link" onclick="switchPage('struktur')">3. Domain & Struktur</a></li>
+            <li><a class="nav-link" onclick="switchPage('eeat')">4. E-E-A-T & Analytics</a></li>
+            <li><a class="nav-link" onclick="switchPage('fazit')">5. Fazit & Doku</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+        <main>
+            <!-- SEITE 1: GRUNDLAGEN -->
+            <section id="home" class="page active">
+                <h2>Einführung: Sichtbarkeit im Web</h2>
+                <p>Willkommen zu diesem Leitfaden. Für ein Start-Up ist das beste Produkt wertlos, wenn es online nicht gefunden wird. Hier lernen Sie die handwerklichen und strategischen Grundlagen der Suchmaschinenoptimierung kennen.</p>
+
+                <h3>Wie werden veröffentlichte Websites im Web gefunden?</h3>
+                <p>Das Internet hat kein zentrales Registerbüro. Suchmaschinen wie Google nutzen automatisierte Programme, sogenannte <strong>Crawler</strong> (oder Spider/Bots). Diese Crawler durchsuchen (crawlen) das Internet kontinuierlich. Sie entdecken neue Websites primär auf zwei Wegen:</p>
+                <ol>
+                    <li><strong>Über Links:</strong> Wenn eine bereits bekannte Website auf Ihre neue Website verlinkt, folgt der Crawler diesem Link und entdeckt Ihre Präsenz.</li>
+                    <li><strong>Über Sitemaps:</strong> Webmaster können eine XML-Sitemap (ein Inhaltsverzeichnis der Website) direkt bei Suchmaschinen einreichen, z.B. über die Google Search Console.</li>
+                </ol>
+
+                <h3>Wie funktioniert eine Suchmaschine? (Arbeitsweise)</h3>
+                <p>Um zu verstehen, wie man für Suchmaschinen optimiert, muss man deren dreistufigen Prozess verstehen.</p>
+                
+                <!-- Visualisierung mit klassischen HTML/CSS Mitteln -->
+                <div class="diagram-container">
+                    <div class="diagram-step">
+                        <h4>1. Crawling</h4>
+                        <p><small>Der Bot liest den Code, die Texte und analysiert die Medien Ihrer Seite.</small></p>
+                    </div>
+                    <div class="diagram-arrow">➔</div>
+                    <div class="diagram-step">
+                        <h4>2. Indexing</h4>
+                        <p><small>Die Daten werden verarbeitet und im riesigen Suchmaschinen-Index (Katalog) gespeichert.</small></p>
+                    </div>
+                    <div class="diagram-arrow">➔</div>
+                    <div class="diagram-step">
+                        <h4>3. Ranking</h4>
+                        <p><small>Bei einer Suchanfrage sortiert ein Algorithmus die indexierten Seiten nach Relevanz und Qualität.</small></p>
+                    </div>
+                </div>
+                
+                <img src="https://img.freepik.com/premium-photo/seo-search-engine-optimization-business-concept_31965-4355.jpg?w=2000" alt="SEO Illustration" style="max-width:100%;height:auto;display:block;margin:20px 0;">
+            </section>
+
+            <!-- SEITE 2: MASSNAHMEN -->
+            <section id="massnahmen" class="page">
+                <h2>SEM - SEA - SEO: Begriffsabgrenzung</h2>
+                <p>Bevor wir tief einsteigen, müssen die Begrifflichkeiten geklärt sein, da sie oft verwechselt werden. Sie stehen in einer direkten Hierarchie zueinander:</p>
+                
+                <table>
+                    <tr>
+                        <th>Begriff</th>
+                        <th>Bedeutung</th>
+                        <th>Verbindung / Erklärung</th>
+                    </tr>
+                    <tr>
+                        <td><strong>SEM</strong></td>
+                        <td>Search Engine Marketing<br>(Suchmaschinenmarketing)</td>
+                        <td>Der Überbegriff. SEM umfasst alle Maßnahmen, um Besucher über Suchmaschinen zu gewinnen. <strong>SEM = SEO + SEA</strong>.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SEA</strong></td>
+                        <td>Search Engine Advertising<br>(Suchmaschinenwerbung)</td>
+                        <td>Gekaufte Sichtbarkeit (z.B. Google Ads). Start-Ups nutzen dies oft für sofortigen Traffic, zahlen jedoch pro Klick.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SEO</strong></td>
+                        <td>Search Engine Optimization<br>(Suchmaschinenoptimierung)</td>
+                        <td>Organische, unbezahlte Sichtbarkeit. Es ist ein langfristiger Prozess, der aber nachhaltigen, kostenlosen Traffic liefert.</td>
+                    </tr>
+                </table>
+
+                <h2>Welche Maßnahmen sind wichtig? Onpage vs. Offpage</h2>
+                <p>Erfolgreiche SEO teilt sich in zwei große Handlungsfelder auf, die beide unverzichtbar sind:</p>
+
+                <h3>Onpage-Optimierung</h3>
+                <p>Dies umfasst alle Maßnahmen, die Sie <strong>direkt auf Ihrer eigenen Website</strong> durchführen. Für ein Start-Up ist dies die absolute Pflichtaufgabe vor allem anderen.</p>
+                <ul>
+                    <li><strong>Content:</strong> Hochwertige, einzigartige und für die Zielgruppe relevante Texte (Suchintention befriedigen).</li>
+                    <li><strong>Technik:</strong> Schnelle Ladezeiten (Core Web Vitals), Mobile-First-Design, sauberes HTML und HTTPS-Verschlüsselung.</li>
+                    <li><strong>Meta-Daten:</strong> Aussagekräftige Title-Tags und Meta-Descriptions, die zum Klicken animieren.</li>
+                </ul>
+
+                <h3>Offpage-Optimierung</h3>
+                <p>Dies umfasst alle Maßnahmen, die <strong>außerhalb Ihrer Website</strong> stattfinden, um deren Autorität und Reputation zu stärken.</p>
+                <ul>
+                    <li><strong>Backlinks:</strong> Verlinkungen von anderen, vertrauenswürdigen Websites auf Ihre Domain. Sie wirken wie digitale Empfehlungen.</li>
+                    <li><strong>Social Signals & PR:</strong> Erwähnungen Ihrer Marke (Brand Mentions) im Web, Fachartikel auf anderen Portalen.</li>
+                </ul>
+                <p><em>Zusammenfassung: Onpage macht Sie relevant, Offpage macht Sie vertrauenswürdig.</em></p>
+            </section>
+
+            <!-- SEITE 3: STRUKTUR -->
+            <section id="struktur" class="page">
+                <h2>Welche Bedeutung hat die gewählte TLD und der Domainname?</h2>
+                <p>Die Top-Level-Domain (TLD, die Endung wie .de, .com) und der Domainname haben sich in ihrer Bedeutung gewandelt.</p>
+                <p>Früher reichte es, das Keyword in der Domain zu haben (z.B. <em>guenstige-schuhe-kaufen.de</em>). Heute erkennt Google dies oft als Spam (Exact Match Domain Update). Der Domainname ist heute vielmehr eine Frage des <strong>Brandings und des Vertrauens</strong>.</p>
+                <ul>
+                    <li><strong>TLD:</strong> Eine länderspezifische TLD wie <em>.de</em> signalisiert Nutzern und Suchmaschinen lokale Relevanz für den deutschen Markt.</li>
+                    <li><strong>Domainname:</strong> Er sollte kurz, einprägsam und im Idealfall Ihr Start-Up-Markenname sein. Nutzer klicken eher auf Marken, denen sie vertrauen, als auf generische Keyword-Ketten.</li>
+                </ul>
+
+                <h2>Bedeutung der Navigations- und Informationsstruktur</h2>
+                <p>Die Architektur Ihrer Website ist sowohl für den Nutzer (UX) als auch für den Crawler extrem wichtig.</p>
+                
+                <div class="highlight-box">
+                    <strong>Regel der flachen Hierarchie:</strong> Jede wichtige Seite sollte im Idealfall mit maximal 3 bis 4 Klicks von der Startseite aus erreichbar sein.
+                </div>
+
+                <p><strong>Warum ist das wichtig?</strong></p>
+                <ul>
+                    <li><strong>Für Crawler:</strong> Eine klare Struktur (oft als Siloing oder Content-Cluster bezeichnet) hilft der Suchmaschine, die thematischen Zusammenhänge Ihrer Website zu verstehen. Es verteilt die "Link-Power" (Linkjuice) sauber auf alle Unterseiten.</li>
+                    <li><strong>Für Nutzer:</strong> Wenn Nutzer schnell finden, was sie suchen, bleiben sie länger auf der Seite. Eine hohe Verweildauer und niedrige Absprungrate sind starke, positive Nutzersignale für das Ranking.</li>
+                </ul>
+                
+                <img src="https://tse1.mm.bing.net/th/id/OIP.16kXOcoQtLJds8EYmbV5NAHaDW?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Website-Struktur Illustration" style="max-width:100%;height:auto;display:block;margin:20px 0;">
+            </section>
+
+            <!-- SEITE 4: E-E-A-T & ANALYTICS -->
+            <section id="eeat" class="page">
+                <h2>Was ist mit dem E-E-A-T Prinzip gemeint?</h2>
+                <p>In der modernen Suchmaschinenoptimierung (besonders relevant für 2026 im Zeitalter von KI-Suchen) ist <strong>E-E-A-T</strong> das wichtigste Rahmenwerk zur Qualitätsbewertung von Inhalten durch Google (Quality Rater Guidelines).</p>
+                <p>E-E-A-T steht für:</p>
+                <ul>
+                    <li><strong>E - Experience (Erfahrung):</strong> Verfügt der Autor über praktische Erfahrungen mit dem Thema? (z.B. ein echter Produkttest vs. reine Zusammenfassung).</li>
+                    <li><strong>E - Expertise (Fachwissen):</strong> Hat der Verfasser die nötige Fachexpertise und Qualifikation?</li>
+                    <li><strong>A - Authoritativeness (Autorität):</strong> Ist Ihre Website oder Ihr Start-Up in der Branche als maßgebliche Quelle anerkannt? (Wird durch externe Backlinks und PR gestärkt).</li>
+                    <li><strong>T - Trustworthiness (Vertrauenswürdigkeit):</strong> Ist die Seite sicher (HTTPS)? Gibt es ein transparentes Impressum? Sind Zahlungswege sicher? Gibt es echte Kundenbewertungen?</li>
+                </ul>
+                <p>Gerade Start-Ups müssen E-E-A-T aktiv aufbauen, indem sie Autorenprofile anlegen, Referenzen zeigen und detaillierte, fehlerfreie Fachartikel veröffentlichen. Vertrauen ist der wichtigste Rankingfaktor.</p>
+
+                <h2>Wie kann Google Analytics helfen?</h2>
+                <p>SEO ohne Daten ist Blindflug. Ein Webanalyse-Tool wie Google Analytics (GA4) ist das Messinstrument für den Erfolg Ihrer Optimierungen.</p>
+                <p>Analytics hilft bei der Beantwortung folgender Fragen:</p>
+                <ul>
+                    <li><strong>Traffic-Quellen:</strong> Wie viele Besucher kommen organisch über Google auf die Seite?</li>
+                    <li><strong>Nutzerverhalten:</strong> Auf welchen Seiten verweilen Nutzer besonders lange? Welche Seiten haben hohe Absprungraten und müssen inhaltlich verbessert werden?</li>
+                    <li><strong>Conversions:</strong> Führt der Traffic zu den gewünschten Zielen (Newsletter-Anmeldung, Kontaktanfrage, Kauf)? Analytics macht den Return on Investment (ROI) von SEO sichtbar.</li>
+                </ul>
+            </section>
+
+            <!-- SEITE 5: FAZIT & DOKU -->
+            <section id="fazit" class="page">
+                <h2>Fazit</h2>
+                <div class="highlight-box" style="font-size: 1.2em; text-align: center;">
+                    "Erfolgreiches SEO ist eine Kombination aus technischer Fehlerfreiheit, nutzerzentrierten Inhalten höchster Expertise, einer logischen Informationsstruktur und dem kontinuierlichen Aufbau von digitalem Vertrauen (E-E-A-T)."
+                </div>
+
+                <hr style="margin: 40px 0; border: 0; border-top: 1px solid #ccc;">
+
+                <h2>Dokumentation (Arbeitsauftrag)</h2>
+                <h3>Zielgruppe</h3>
+                <p>Diese Website richtet sich gezielt an <strong>Start-Up Unternehmen</strong>. Start-Ups haben oft begrenzte Budgets und müssen verstehen, wie sie nachhaltig Reichweite aufbauen, ohne dauerhaft auf teures SEA (Ads) angewiesen zu sein. Die Sprache ist professionell, aber erklärend, um Einsteigern das technische Konzept verständlich zu machen.</p>
+
+                <h3>Konzeption der Website (Vorgehensweise)</h3>
+                <ol>
+                    <li><strong>Design & Technik:</strong> Das Design wurde bewusst <em>klassisch und fundiert</em> gehalten. Es verzichtet auf überladene JavaScript-Effekte oder moderne KI-generierte "Slop"-Ästhetik. Der Fokus liegt auf barrierefreier Lesbarkeit, klaren Kontrasten und solider HTML-Struktur. Dies spiegelt eine professionelle Handwerksarbeit wider.</li>
+                    <li><strong>Informationsarchitektur:</strong> Um die im Inhalt geforderte "flache Hierarchie" in die Praxis umzusetzen, wurde die Navigation in logische, sequenzielle Schritte unterteilt (Grundlagen -> Maßnahmen -> Struktur -> Qualität).</li>
+                    <li><strong>Inhaltsaufbereitung:</strong> Die Leitfragen des Arbeitsauftrags wurden als klare H2- und H3-Überschriften (HTML-Semantik) implementiert. Diagramme wurden aus Performance-Gründen direkt mit CSS erstellt, anstatt große Bilddateien zu laden – ein echter SEO-Vorteil für die Ladezeit (Core Web Vitals).</li>
+                    <li><strong>Versteckte Quellen:</strong> Das Wissen basiert auf aktuellen Branchenstandards (z.B. den Entwickler-Dokumentationen von Google und etablierten SEO-Magazinen), wurde jedoch zielgruppengerecht für Start-Ups abstrahiert und zusammengefasst, ohne den Textfluss durch Quellenangaben zu stören.</li>
+                </ol>
+            </section>
+        </main>
+
+        <!-- Sidebar für zusätzliche Navigation/Hinweise -->
+        <aside>
+            <h3>Quick Facts für Start-Ups</h3>
+            <ul>
+                <li>SEO braucht Zeit (oft 3-6 Monate bis erste starke Ergebnisse sichtbar werden).</li>
+                <li>Qualität schlägt Quantität: Ein sehr guter Fachartikel ist besser als fünf kurze News.</li>
+                <li>Vergessen Sie nicht Google My Business für lokales SEO (falls Sie einen physischen Standort haben).</li>
+            </ul>
+
+            <h3 style="margin-top: 30px;">Wichtige Abkürzungen</h3>
+            <ul>
+                <li><strong>SERP:</strong> Search Engine Results Page (Suchergebnisseite)</li>
+                <li><strong>CTR:</strong> Click-Through-Rate (Klickrate)</li>
+                <li><strong>UX:</strong> User Experience (Nutzererfahrung)</li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Joshua Schröder | LK Medientechnik: Landgraf</p>
+    </footer>
+</div>
+
+<script>
+    // JavaScript zur Simulation von mehreren HTML-Dateien (Seiten-Navigation)
+    function switchPage(pageId) {
+        // 1. Alle Seiten ausblenden
+        const pages = document.querySelectorAll('.page');
+        pages.forEach(page => {
+            page.classList.remove('active');
+        });
+
+        // 2. Alle Navigations-Links de-aktivieren
+        const links = document.querySelectorAll('.nav-link');
+        links.forEach(link => {
+            link.classList.remove('active');
+        });
+
+        // 3. Gewählte Seite anzeigen
+        document.getElementById(pageId).classList.add('active');
+
+        // 4. Geklickten Link als aktiv markieren
+        event.target.classList.add('active');
+    }
+</script>
+
+</body>
+</html>
