@@ -1,4 +1,4 @@
-/* style.css – Klassisch, strukturiert & handgemacht */
+/* style.css */
 
 body {
     background-color: #f7f9fc;
@@ -9,7 +9,6 @@ body {
     padding: 0;
 }
 
-/* Typografie */
 h1, h2, h3, h4 {
     font-family: 'Merriweather', Georgia, serif;
     color: #1c2833;
