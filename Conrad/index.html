@@ -3,79 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website-Projekt: Start-ups & SEO</title>
+    <title>SEO Wiki - Home</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <h1>Wie Ihr Start-up im Netz gefunden wird</h1>
-    <p>Ein praxisnahes Projekt über Webdesign und Suchmaschinenoptimierung</p>
-</header>
-
-<nav>
-    <a href="index.html" class="active">Grundlagen</a>
-    <a href="saeulen.html">Die 3 Säulen</a>
-    <a href="trends.html">Trends & Analytics</a>
-    <a href="checkliste.html">Die Checkliste</a>
+<nav class="top-nav">
+    <div class="nav-container">
+        <div class="nav-logo">SEO Wiki</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="saeulen.html">Methodik</a></li>
+            <li><a href="trends.html">Analysen</a></li>
+            <li><a href="checkliste.html">Ressourcen</a></li>
+        </ul>
+    </div>
 </nav>
 
-<main class="container">
+<div class="page-wrapper">
+    <main class="main-content">
+        <header class="section-header">
+            <h1>Sichtbarkeit im digitalen Raum</h1>
+            <p>Die Evolution der Informationssuche: Vom reaktiven Keyword-Matching zur proaktiven Antwort-Maschine.</p>
+        </header>
 
-    <div class="intro-text">
-        <p>Für Start-up-Unternehmen mit einer innovativen Idee ist Sichtbarkeit alles. Doch wie werden veröffentlichte Websites im Web überhaupt gefunden? Auf dieser Seite klären wir die absoluten Grundlagen, ohne kompliziertes Fachchinesisch.</p>
-    </div>
+        <section class="content-block">
+            <h2>Die neue Ära der Suche (2024-2026)</h2>
+            <p>Der Zeitraum zwischen 2024 und 2026 markiert die bedeutendste Zäsur in der Geschichte der digitalen Informationsbeschaffung. Wir haben den Übergang von einer keywordbasierten Suche hin zu einem Ökosystem der „Antwort-Maschinen“ vollzogen.</p>
+            <p>Heute erscheinen bei über <strong>50 % aller Suchanfragen</strong> KI-gesteuerte AI Overviews. Für Entscheider bedeutet dies: Sichtbarkeit definiert sich nicht mehr primär über die Position in einer Liste, sondern über die Präsenz als verifizierte Quelle innerhalb generativer Zusammenfassungen.</p>
+        </section>
 
-    <div class="info-kasten">
-        <h2>Wie funktioniert eine Suchmaschine?</h2>
-        <p>Bevor wir optimieren, müssen wir verstehen, wie Google und Co. arbeiten. Der Prozess lässt sich in drei einfache Schritte unterteilen:</p>
-        
-        <div class="process-steps">
-            <div class="step">
-                <div class="icon">🕷️</div>
-                <h4>1. Crawling</h4>
-                <p>Suchmaschinen-Bots (Spider) durchsuchen das Internet systematisch nach neuen und aktualisierten Websites.</p>
+        <section class="content-block">
+            <h2>Fundamente der Auffindbarkeit</h2>
+            <p>Suchmaschinen agieren heute als hochkomplexe „digitale Türsteher“. Um diesen Prozess zu verstehen, nutzen wir die Analogie einer globalen Bibliothek:</p>
+            <ul class="detail-list">
+                <li><strong>Das Internet als Bibliothek:</strong> Ein nahezu unendlicher, unstrukturierter Fundus an Daten.</li>
+                <li><strong>Die Website als Buch:</strong> Ihr spezifischer Wissensbeitrag zur digitalen Welt.</li>
+                <li><strong>Die Suchmaschine als Bibliothekar:</strong> Ein KI-gestützter Vermittler, der nicht nur das Buch findet, sondern die relevantesten Passagen direkt für den Nutzer zusammenfasst.</li>
+            </ul>
+        </section>
+
+        <section class="content-block">
+            <h2>Funktionsweise moderner Suchmaschinen</h2>
+            <p>Der Retrieval-Prozess läuft heute in einem hochgradig optimierten Drei-Stufen-System ab:</p>
+            <ul class="detail-list">
+                <li><strong>Phase 1: Crawling & Discovery</strong> – Identifikation von Inhalten durch LLM-gesteuerte Bots. Fokus auf technische Signale und "AI-Readiness".</li>
+                <li><strong>Phase 2: Indexing & Semantic Processing</strong> – Analyse von Entitäten und semantischen Beziehungen. Speicherung in Vektordatenbanken.</li>
+                <li><strong>Phase 3: Ranking & Answer Generation</strong> – Bewertung der "Retrieval-Relevance" und Generierung von AI Overviews.</li>
+            </ul>
+        </section>
+
+        <section class="content-block">
+            <h2>Das SEM-Framework</h2>
+            <p>Erfolgreiches Marketing erfordert eine hybride Strategie. Das SEM-Framework verbindet kurzfristige Reichweite mit langfristiger Autorität:</p>
+            <div style="background: var(--primary); color: #fff; padding: 1.5rem; border-left: 8px solid var(--accent-orange); margin: 1rem 0;">
+                <p style="font-size: 1.3rem; font-weight: 800; margin-bottom: 0.5rem;">SEM = SEA + SEO + GEO</p>
+                <p style="font-size: 0.9rem; opacity: 0.8;">Suchmaschinenmarketing ist die Summe aus bezahlter Werbung, organischer Optimierung und der neuen Generative Engine Optimization.</p>
             </div>
-            <div class="arrow">➔</div>
-            <div class="step">
-                <div class="icon">🗂️</div>
-                <h4>2. Indexierung</h4>
-                <p>Die gefundenen Seiten werden analysiert, nach Inhalten sortiert und in einem riesigen Katalog (Index) abgespeichert.</p>
-            </div>
-            <div class="arrow">➔</div>
-            <div class="step">
-                <div class="icon">🏆</div>
-                <h4>3. Ranking</h4>
-                <p>Gibt ein Nutzer eine Suchanfrage ein, bewertet ein Algorithmus die indexierten Seiten und zeigt die relevantesten oben an.</p>
-            </div>
+        </section>
+    </main>
+
+    <aside class="sidebar">
+        <div class="widget">
+            <h3>Definition: SEM-Familie</h3>
+            <div class="box"><strong>SEM (Search Engine Marketing)</strong>Der operative Oberbegriff für alle Maßnahmen der Suchsichtbarkeit.</div>
+            <div class="box"><strong>SEA (Search Engine Advertising)</strong>Bezahlte Anzeigen für <u>Sofort-Sichtbarkeit</u>. Unverzichtbar für kompetitive Keywords.</div>
+            <div class="box"><strong>SEO (Search Engine Optimization)</strong>Organische Autorität. Fokus auf <u>nachhaltiges Wachstum</u> und Vertrauen.</div>
         </div>
-    </div>
-
-    <div class="info-kasten">
-        <h2>Das Begriffs-Dreieck: SEM, SEA und SEO</h2>
-        <p>Oft werden diese Begriffe verwechselt. Sie hängen eng zusammen, bedeuten aber unterschiedliche Dinge:</p>
-        <div class="grid-2">
-            <div class="card">
-                <h3>SEM (Search Engine Marketing)</h3>
-                <p>Der Überbegriff! Suchmaschinenmarketing umfasst alle Maßnahmen, um Besucher über Suchmaschinen zu gewinnen.</p>
-            </div>
-            <div class="card">
-                <h3>SEA (Search Engine Advertising)</h3>
-                <p>Bezahlte Werbung. Man kauft sich Anzeigenplätze (z. B. Google Ads) ganz oben in den Suchergebnissen. Kostet Geld pro Klick.</p>
-            </div>
-            <div class="card full-width">
-                <h3>SEO (Search Engine Optimization)</h3>
-                <p>Die organische Optimierung. Hier geht es darum, die eigene Website so zu verbessern, dass sie unbezahlt auf den vorderen Plätzen landet.</p>
-            </div>
+        <div class="widget">
+            <h3>Wichtig: Die neue Ära</h3>
+            <div class="box fact"><strong>AI Overviews</strong>Seit 2026 erscheinen bei über 50 % aller Suchanfragen KI-gesteuerte Zusammenfassungen ganz oben.</div>
+            <div class="box alert"><strong>Zero-Click-Rate</strong>Die Rate der Suchen ohne Klick auf eine Website ist auf <u>60 %</u> angestiegen.</div>
+            <div class="box tip"><strong>Information Gain</strong>Nur Inhalte, die <u>einzigartige neue Erkenntnisse</u> bieten, werden von modernen KI-Systemen priorisiert zitiert.</div>
         </div>
-    </div>
-
-</main>
+        <div class="widget">
+            <h3>Strategischer Fokus</h3>
+            <div class="box"><strong>Entity Authority</strong>Es zählt nicht nur der Name, sondern die gesamte Historie und Reputation der Marke über alle Plattformen hinweg.</div>
+            <div class="box"><strong>Source of Truth</strong>Ziel der GEO ist es, von LLMs (ChatGPT, Gemini) als primäre Wissensquelle extrahiert zu werden.</div>
+        </div>
+    </aside>
+</div>
 
 <footer>
-    <div class="footer-content">
-        <p><strong>Website-Projekt Start-ups & SEO</strong></p>
-        <p>Erstellt von Conrad W. – Medien LK</p>
+    <div class="footer-inner">
+        <div>Conrad W.</div>
+        <div>Medientechnik | Landgraf</div>
     </div>
 </footer>
 

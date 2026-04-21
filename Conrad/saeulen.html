@@ -3,68 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Die 3 Säulen - Start-up SEO</title>
+    <title>SEO Wiki - Methodik</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <h1>Die Säulen der Sichtbarkeit</h1>
-    <p>Maßnahmen direkt auf und abseits Ihrer Website</p>
-</header>
-
-<nav>
-    <a href="index.html">Grundlagen</a>
-    <a href="saeulen.html" class="active">Die 3 Säulen</a>
-    <a href="trends.html">Trends & Analytics</a>
-    <a href="checkliste.html">Die Checkliste</a>
+<nav class="top-nav">
+    <div class="nav-container">
+        <div class="nav-logo">SEO Wiki</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="saeulen.html" class="active">Methodik</a></li>
+            <li><a href="trends.html">Analysen</a></li>
+            <li><a href="checkliste.html">Ressourcen</a></li>
+        </ul>
+    </div>
 </nav>
 
-<main class="container">
+<div class="page-wrapper">
+    <main class="main-content">
+        <header class="section-header">
+            <h1>Methodik der Optimierung</h1>
+            <p>Onpage- und Offpage-Strategien zur Maximierung der digitalen Autorität.</p>
+        </header>
 
-    <p>Welche Maßnahmen an Websites sind wichtig? Man teilt sie klassisch in <strong>Onpage</strong> (auf der Seite) und <strong>Offpage</strong> (außerhalb der Seite) ein.</p>
+        <section class="content-block">
+            <h2>Onpage-Optimierung: Relevanz-Basis</h2>
+            <p>Im Jahr 2026 steht Onpage-Exzellenz an erster Stelle. Ohne ein technisch sauberes Fundament werden Inhalte von KIs ignoriert.</p>
+            <ul class="detail-list">
+                <li><strong>Answer Block Taktik:</strong> Platzierung von präzisen, 40-60 Wörter umfassenden Zusammenfassungen am Anfang von Sektionen. Dies steigert die Wahrscheinlichkeit einer KI-Zitierung um bis zu 40 %.</li>
+                <li><strong>Chunk-Ready Content:</strong> Strukturierung von Inhalten in logische, maschinenlesbare Segmente, damit LLMs die Informationen effizient extrahieren können.</li>
+                <li><strong>Core Web Vitals (INP):</strong> Fokus auf <u>Interaction to Next Paint</u> als neuen Standard für Interaktivität (Ziel: < 200ms).</li>
+                <li><strong>Schema Markup:</strong> Tiefgreifende Auszeichnung von Entitäten wie Personen, Organisationen und FAQs im Quellcode.</li>
+            </ul>
+            <div class="visual-box">
+                <img src="images/onpage-seo.png" alt="Onpage SEO">
+                <div class="visual-caption">Abb 2. Strukturelle Onpage-Faktoren im Überblick.</div>
+            </div>
+        </section>
 
-    <div class="info-kasten">
-        <h3>1. Die Basis: Technisches SEO (Onpage)</h3>
-        <p>Die Technik ist das Fundament. Dazu gehören Ladezeiten, Mobilfreundlichkeit und auch die richtige Adresse:</p>
-        <ul>
-            <li><strong>Domainname & TLD:</strong> Die Wahl der Top-Level-Domain (z.B. .de für Deutschland oder .com international) signalisiert Suchmaschinen die regionale Relevanz. Der Domainname sollte einprägsam sein und im Idealfall den Markennamen oder das Kernthema enthalten.</li>
-            <li>Ein SSL-Zertifikat (https) ist heute unverzichtbar für die Sicherheit.</li>
-        </ul>
-    </div>
+        <section class="content-block">
+            <h2>Offpage-Optimierung: Reputation</h2>
+            <p>Offpage-Signale dienen als Vertrauensverstärker. Die Bedeutung klassischer Backlinks ist zugunsten qualitativer Signale auf Platz 3 der Rankingfaktoren gesunken.</p>
+            <ul class="detail-list">
+                <li><strong>Entity Authority:</strong> Google bewertet die Erwähnung Ihrer Marke in vertrauenswürdigen Kontexten, auch ohne direkten Link (Linkless Mentions).</li>
+                <li><strong>Digital PR:</strong> Platzierung von Original-Studien und Expertenmeinungen zur Stärkung der Marken-Identität im Knowledge Graph.</li>
+            </ul>
+            <div class="visual-box">
+                <img src="images/offpage-seo.jpg" alt="Offpage SEO">
+                <div class="visual-caption">Abb 3. Strukturmodell der digitalen Autoritäts-Validierung.</div>
+            </div>
+        </section>
 
-    <div class="info-kasten">
-        <h3>2. Struktur & Inhalte: Content SEO (Onpage)</h3>
-        <p>Hier geht es um die Inhalte und den Aufbau Ihrer Website.</p>
-        <ul>
-            <li><strong>Navigations- und Informationsstruktur:</strong> Eine logische, flache Menüstruktur hilft nicht nur dem Nutzer, sich zurechtzufinden, sondern erlaubt es den Suchmaschinen-Bots auch, alle Unterseiten schnell zu crawlen. Alles Wichtige sollte mit max. 3 Klicks erreichbar sein.</li>
-            <li>Verwenden Sie Begriffe, nach denen Ihre Kunden tatsächlich suchen (Keywords).</li>
-        </ul>
-    </div>
+        <section class="content-block">
+            <h2>Architektur des Wissens</h2>
+            <p>Eine flache Hierarchie ist Voraussetzung für effiziente Crawlability und positive User Experience (UX). Die <strong>3-Klick-Regel</strong> besagt, dass alle wesentlichen Informationen innerhalb von maximal drei Klicks erreichbar sein müssen.</p>
+        </section>
+    </main>
 
-    <div class="info-kasten">
-        <h3>3. Der Ruf: Off-Page SEO</h3>
-        <div class="card-media">
-            <img src="https://cyfrow.org/wp-content/uploads/2024/09/Basics-of-On-Page-SEO.png" alt="Off-Page SEO Illustration" />
+    <aside class="sidebar">
+        <div class="widget">
+            <h3>Technik-Wiki: Onpage</h3>
+            <div class="box"><strong>INP (Interaction to Next Paint)</strong>Misst die Zeit vom Klick des Nutzers bis zur sichtbaren Reaktion der Seite. Zielwert: <u>< 200ms</u>.</div>
+            <div class="box"><strong>Answer Block Taktik</strong>Präzise <u>40-60 Wörter</u> am Kapitelanfang steigern die Chance auf KI-Zitate um 40 %.</div>
+            <div class="box"><strong>Schema Markup</strong>Technische Auszeichnung von Entitäten (Personen, FAQs), damit Bots den Kontext verstehen.</div>
+            <div class="box"><strong>HTTPS / SSL</strong>Ein SSL-Zertifikat ist heute unverzichtbar für die Sicherheit und ein harter Rankingfaktor.</div>
         </div>
-        <p>Auch außerhalb Ihrer eigenen Website spielt sich viel ab. Es geht um Empfehlungen aus dem Netz.</p>
-        <ul>
-            <li>Wenn andere seriöse Websites (Blogs, Magazine) auf Ihr Start-up verlinken (Backlinks), wirkt das wie eine digitale Empfehlung.</li>
-            <li>Social Media und digitale PR helfen, die Marke bekannt zu machen.</li>
-        </ul>
-    </div>
-
-    <div class="fazit-kasten">
-        <h3>Fazit</h3>
-        <p class="highlight-text">"Erfolgreiches SEO ist eine Kombination aus technischer Perfektion, hochwertigem und nutzerzentriertem Content sowie dem Aufbau von digitalem Vertrauen und Autorität."</p>
-    </div>
-
-</main>
+        <div class="widget">
+            <h3>Struktur & Hierarchie</h3>
+            <div class="box tip"><strong>3-Klick-Regel</strong>Alle wesentlichen Informationen müssen innerhalb von maximal <u>drei Klicks</u> erreichbar sein.</div>
+            <div class="box"><strong>TLD (Top-Level-Domain)</strong>Endungen wie .de oder .com. Sie signalisieren Suchmaschinen die regionale Relevanz.</div>
+        </div>
+        <div class="widget">
+            <h3>Wichtig: Offpage-Gewicht</h3>
+            <div class="box alert"><strong>Backlinks (13 % Gewicht)</strong>Klassische Links sind zugunsten qualitativer Signale auf Platz 3 der Rankingfaktoren gesunken.</div>
+            <div class="box fact"><strong>Entity Authority</strong>Google bewertet die <u>Erwähnung Ihrer Marke</u> in vertrauenswürdigen Kontexten, auch ohne direkten Link.</div>
+        </div>
+    </aside>
+</div>
 
 <footer>
-    <div class="footer-content">
-        <p><strong>Website-Projekt Start-ups & SEO</strong></p>
-        <p>Erstellt von Conrad W. – Medien LK</p>
+    <div class="footer-inner">
+        <div>Conrad W.</div>
+        <div>Medientechnik | Landgraf</div>
     </div>
 </footer>
 

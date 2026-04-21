@@ -3,59 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEO Trends & Analytics</title>
+    <title>SEO Wiki - Analysen</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <h1>Erfolg messbar machen</h1>
-    <p>Aktuelle Entwicklungen und Datenanalyse</p>
-</header>
-
-<nav>
-    <a href="index.html">Grundlagen</a>
-    <a href="saeulen.html">Die 3 Säulen</a>
-    <a href="trends.html" class="active">Trends & Analytics</a>
-    <a href="checkliste.html">Die Checkliste</a>
+<nav class="top-nav">
+    <div class="nav-container">
+        <div class="nav-logo">SEO Wiki</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="saeulen.html">Methodik</a></li>
+            <li><a href="trends.html" class="active">Analysen</a></li>
+            <li><a href="checkliste.html">Ressourcen</a></li>
+        </ul>
+    </div>
 </nav>
 
-<main class="container">
+<div class="page-wrapper">
+    <main class="main-content">
+        <header class="section-header">
+            <h1>Analysen & Experten-Modelle</h1>
+            <p>Vertrauensbildung durch E-E-A-T und datengesteuerte Optimierung via Google Analytics.</p>
+        </header>
 
-    <div class="info-kasten">
-        <h2>Das E-E-A-T Prinzip</h2>
-        <div class="card-media">
-            <img src="https://www.ithelps-digital.com/images/2024/02/eeat/eeat-konzept.jpg" alt="E-E-A-T Prinzip" />
+        <section class="content-block">
+            <h2>Das E-E-A-T Prinzip</h2>
+            <p>Im Zeitalter von KI-generiertem Massen-Content ist Vertrauen zum entscheidenden Differenzierungsmerkmal geworden. Google nutzt vier Kernfaktoren zur Bewertung:</p>
+            <ul class="detail-list">
+                <li><strong>Experience (Erfahrung):</strong> Nachweis von First-Hand-Knowledge (z. B. eigene Fallstudien, Originalfotos).</li>
+                <li><strong>Expertise (Fachwissen):</strong> Formale Qualifikationen und Reputation des Autors in seinem Fachgebiet.</li>
+                <li><strong>Authoritativeness (Autorität):</strong> Bekanntheit der Entität oder Marke in der spezifischen Nische.</li>
+                <li><strong>Trustworthiness (Vertrauen):</strong> Das Fundament. Sicherheit (HTTPS), Transparenz und verifizierbare Quellen.</li>
+            </ul>
+            <div class="visual-box">
+                <img src="images/eeat-konzept.jpg" alt="EEAT Prinzip">
+                <div class="visual-caption">Abb 4. Trust als Zentrum der E-E-A-T Faktoren.</div>
+            </div>
+        </section>
+
+        <section class="content-block">
+            <h2>Datengesteuerte Optimierung</h2>
+            <p>Die Erfolgsmessung im Jahr 2026 hat sich von reinen Klickzahlen hin zur Analyse des <strong>User Intent</strong> gewandelt. Google Analytics liefert hierfür die Datenbasis:</p>
+            <ul class="detail-list">
+                <li><strong>AI Share of Voice (AI SOV):</strong> Misst, wie oft Ihre Marke in KI-Antworten als Quelle zitiert wird.</li>
+                <li><strong>Conversion-Vorteil:</strong> Daten zeigen, dass Traffic über KI-Plattformen (GEO) <u>4,4-mal häufiger</u> konvertiert als traditionelle Such-Anfragen.</li>
+                <li><strong>Dwell Time & INP:</strong> Analyse der Interaktionsqualität als Signal für inhaltliche Relevanz.</li>
+            </ul>
+            <div class="visual-box">
+                <img src="images/analytics-dashboard.webp" alt="Analytics Dashboard">
+                <div class="visual-caption">Abb 5. Performance-Analyse moderner Engagement-Metriken.</div>
+            </div>
+        </section>
+    </main>
+
+    <aside class="sidebar">
+        <div class="widget">
+            <h3>Forschung: MUVERA & KI</h3>
+            <div class="box"><strong>MUVERA-Update (2025)</strong>Systeme nutzen heute <u>Multi-vector Retrieval</u>, um nicht nur Wörter, sondern komplexe Absichten zu verstehen.</div>
+            <div class="box fact"><strong>Vektordatenbanken</strong>Inhalte werden heute als Vektoren gespeichert, um semantische Beziehungen in Millisekunden abzugleichen.</div>
+            <div class="box"><strong>Retrieval-Relevance</strong>Die Bewertung, ob Ihr Inhalt wertvoll genug ist, um Teil einer KI-Antwort (Answer Generation) zu werden.</div>
         </div>
-        <p>Was ist mit E-E-A-T gemeint? Da durch KI immer mehr Massen-Content entsteht, bewertet Google die Qualität von Websites zunehmend nach diesen vier Faktoren:</p>
-        <ul class="feature-list">
-            <li><strong>E - Experience (Erfahrung):</strong> Hat der Autor echte, praktische Erfahrung mit dem Thema?</li>
-            <li><strong>E - Expertise (Fachwissen):</strong> Ist das nötige Fachwissen vorhanden?</li>
-            <li><strong>A - Authoritativeness (Autorität):</strong> Gilt die Website als anerkannte Quelle in der Branche?</li>
-            <li><strong>T - Trust (Vertrauen):</strong> Ist die Seite sicher, transparent (Impressum) und glaubwürdig?</li>
-        </ul>
-    </div>
-
-    <div class="info-kasten">
-        <h2>Wie kann Google Analytics helfen?</h2>
-        <div class="card-media">
-            <img src="https://cdn.botpenguin.com/assets/website/Google_Analytics_Dashboard_c7d53d6859.webp" alt="Google Analytics Dashboard" />
+        <div class="widget">
+            <h3>Wiki: Analytics 2026</h3>
+            <div class="box"><strong>User Intent</strong>Will der Nutzer etwas <u>kaufen</u> (transaktional) oder nur <u>wissen</u> (informativ)?</div>
+            <div class="box fact"><strong>AI Share of Voice (AI SOV)</strong>Der neue Goldstandard. Er misst, wie oft eine Marke in KI-Antworten als Quelle zitiert wird.</div>
+            <div class="box tip"><strong>4,4x Conversion-Vorteil</strong>Traffic über KI-Plattformen konvertiert 4,4-mal häufiger als klassischer Such-Traffic.</div>
         </div>
-        <p>SEO ist kein Blindflug. Werkzeuge wie Google Analytics (oder datenschutzfreundliche Alternativen) sind für ein Start-up überlebenswichtig, denn sie beantworten Fragen wie:</p>
-        <ul>
-            <li>Woher kommen meine Besucher? (Über Google, Social Media oder direkt?)</li>
-            <li>Welche Unterseiten werden am häufigsten gelesen?</li>
-            <li>Wo springen Besucher ab, weil sie nicht finden, wonach sie suchen?</li>
-        </ul>
-        <p>Durch diese Daten können Sie Ihre Website kontinuierlich verbessern und genau das anbieten, was Ihre Zielgruppe wirklich lesen möchte.</p>
-    </div>
-
-</main>
+        <div class="widget">
+            <h3>Technik-Update</h3>
+            <div class="box"><strong>MUVERA-Update (2025)</strong>Systeme verstehen komplexe Nutzerintentionen und kontextuelle Zusammenhänge besser als je zuvor.</div>
+            <div class="box fact"><strong>YMYL-Fokus</strong>Themen wie Finanzen und Gesundheit (Your Money, Your Life) unterliegen besonders strengen E-E-A-T Kriterien.</div>
+        </div>
+    </aside>
+</div>
 
 <footer>
-    <div class="footer-content">
-        <p><strong>Website-Projekt Start-ups & SEO</strong></p>
-        <p>Erstellt von Conrad W. – Medien LK</p>
+    <div class="footer-inner">
+        <div>Conrad W.</div>
+        <div>Medientechnik | Landgraf</div>
     </div>
 </footer>
 
