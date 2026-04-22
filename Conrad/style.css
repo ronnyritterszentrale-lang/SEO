@@ -133,4 +133,63 @@ ul.detail-list strong { font-weight: 700; color: var(--primary); }
 footer { border-top: 1px solid var(--outline-variant); padding: 2.5rem 0; background: #fff; }
 .footer-inner { max-width: 1300px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; font-weight: 700; color: var(--primary); }
 
+/* --- Infobox / Hover-Erklärungen --- */
+.info-term {
+    border-bottom: 2px solid #ffeb3b; /* Gelbe Unterstreichung */
+    cursor: help;
+    position: relative;
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.info-term:after {
+    content: attr(data-info);
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary);
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1.4;
+    white-space: normal;
+    width: 250px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+    text-align: center;
+}
+
+.info-term:hover:after {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Kleiner Pfeil unter der Box */
+.info-term:before {
+    content: "";
+    position: absolute;
+    bottom: 115%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 8px 8px 0 8px;
+    border-style: solid;
+    border-color: var(--primary) transparent transparent transparent;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+}
+
+.info-term:hover:before {
+    opacity: 1;
+    visibility: visible;
+}
+
 @media (max-width: 1000px) { .page-wrapper { grid-template-columns: 1fr; } }
